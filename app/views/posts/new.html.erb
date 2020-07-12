@@ -1,49 +1,26 @@
 <h2>Create a Post</h2>
 <%=form_tag posts_path, method: "post" do %>
-<<<<<<< HEAD
   
     
     
 <div class="field">
-=======
-  <%if @post.errors.any?%>
-    <div id="error_explanation">
-      <h2>There were some errors:</h2>
-      <ul>
-        <%@post.errors.full_messages.each do |message|%>
-          <li><%=message%></li>
-        <%end%>
-      </ul>
-    </div>
-  <%end%>
-    
-    
-<div class="field<%=' field_with_errors' if @post.errors[:title].any?%>">
->>>>>>> f6538dbaaa2ce7726b770a20c05b64d027c87fa1
   <%=label_tag "title", "Title"%>
   <%=text_field_tag "title"%>
 </div>
 
-<<<<<<< HEAD
 <div class="field">
-=======
-<div class="field<%=' field_with_errors' if @post.errors[:category].any?%>">
->>>>>>> f6538dbaaa2ce7726b770a20c05b64d027c87fa1
   <%=label_tag "category", "Category"%>
   <%=text_field_tag "category"%>
 </div>
 
-<<<<<<< HEAD
 <div class="field">
-=======
-<div class="field<%=' field_with_errors' if @post.errors[:content].any?%>">
->>>>>>> f6538dbaaa2ce7726b770a20c05b64d027c87fa1
   <%=label_tag "content", "Content"%>
   <%=text_area_tag "content"%>
 </div>
 
 <%= submit_tag "Create" %>
 <% end %>
+
 
 
 
